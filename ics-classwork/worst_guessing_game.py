@@ -1,0 +1,8 @@
+print("THIS IS THE WORST NUMBA GAME EVAR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! XDXD POOPIE POOP LOLOLOL")
+number = int(input("I  THINK OF MUMBER 1-10. GUESS IT. NOW. O CRGI0FVIGJFG. I HAVE SEVERE BRAIN DAMAGE FROM MY FATHER BEATING ME"))
+if number == 3:
+    print("WTF!!!!!!!!!HP WW U GET IT!!! ITS 3!!! STOP HAXXORING NEWB U SUCK UR BAD AT GAME. LOL!")
+elif number < 3 or 4 <= number <= 10:
+    print("LOL!!!!!!!!!! UGOGT IT WRONG U SUCK LOLOADFWIGJGWBRHJDF DXXDXDXDXXDDD i have stage IV skin cancer")
+else:
+    print("ACTUALLY CHOOSE A NUMNER THATS IN THE CODE NEWB. DONT BE SMART STUPID")
