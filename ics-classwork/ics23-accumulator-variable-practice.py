@@ -48,17 +48,14 @@ while e <= 10000:
     e += 5
 print(multiple)
     
-  f = 100
+f = 100
 multiple = 0
-tmultiple = 0
 while f <= 200:
-    print(f)
+    if f % 3 != 0:
+        print(f)
     multiple += f
     f += 5
-    tmultiple = % multiple
 print(multiple)
     
     
-
-    
-
+# I blame John
