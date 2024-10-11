@@ -16,9 +16,10 @@ while done == False:
     print("D. Stop for the night. ")
     print("E. Status check. ")
     print("Q. Quit. ")
-    user_choice = input()
+    user_choice = input("What do you choose?: ")
         
     if user_choice == "Q":
+        print("End")
         done = True
 
     elif user_choice == "E":
@@ -89,6 +90,7 @@ while done == False:
             
     elif user_choice == "A":
         if drinks > 0:
+            print("Your thirst has been quenched! You feel refreshed!")
             thirst = 0
             drinks -= 1
         else:
@@ -107,13 +109,5 @@ while done == False:
         done = True
         
     if miles_traveled >= 200 and not done:
-        print("You run away with your camel. You won. GG!")
-        
-    
-        
-        
-    
-        
-        
-
-    
+        print("You escape the natives with your camel. You won. GG!")
+        done = True
