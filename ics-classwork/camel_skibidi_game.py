@@ -32,10 +32,10 @@ while done == False:
         print("Your camel is happy. -w-")
         random_distance = random.randrange(7, 15)
         distance += random_distance
-        if miles_traveled - distance <= 0 and not done:
+        if distance >= 0 and not done:
             print("The natives caught up to you and they extradite you to be executed on the rope.")
             done = True
-        if miles_traveled - distance <= 15 and not done:
+        if distance >= -15 and not done:
             print("The natives are catching up to you!!")
         guesser = random.randrange(1, 21)   
         if guesser == lucky and not done:
@@ -109,3 +109,12 @@ while done == False:
     if miles_traveled >= 200 and not done:
         print("You escape the natives with your camel. You won. GG!")
         done = True
+        
+    
+        
+        
+    
+        
+        
+
+    
