@@ -31,12 +31,11 @@ while done == False:
         camel_tiredness = 0
         print("Your camel is happy. -w-")
         random_distance = random.randrange(7, 15)
-        distance = distance + random_distance
-        deathnatives = miles_traveled + distance
-        if deathnatives <= 0 and not done:
+        distance += random_distance
+        if miles_traveled - distance <= 0 and not done:
             print("The natives caught up to you and they extradite you to be executed on the rope.")
             done = True
-        if deathnatives > 0 and deathnatives <= 15 and not done:
+        if miles_traveled - distance <= 15 and not done:
             print("The natives are catching up to you!!")
         guesser = random.randrange(1, 21)   
         if guesser == lucky and not done:
@@ -44,7 +43,7 @@ while done == False:
             thirst = 0
             drinks = 3
             camel_tiredness = 0
-        
+        print(f"{distance}")
     elif user_choice == "C":
         random_sprint = random.randrange(10, 21)
         thirst += 1
@@ -52,12 +51,11 @@ while done == False:
         miles_traveled = miles_traveled + random_sprint
         random_tiredness = random.randrange(1, 4)
         random_distance = random.randrange(7, 15)
-        distance = distance + random_distance
-        deathnatives = miles_traveled + distance
-        if deathnatives <= 0 and not done:
+        distance += random_distance
+        if miles_traveled - distance <= 0 and not done:
             print("The natives caught up to you and they extradite you to be executed on the rope.")
             done = True
-        if deathnatives > 0 and deathnatives <= 15 and not done:
+        if miles_traveled - distance <= 15 and not done:
             print("The natives are catching up to you!!")
         camel_tiredness = camel_tiredness + random_tiredness
         guesser = random.randrange(1, 21)   
@@ -74,12 +72,12 @@ while done == False:
         print(f"You ran {random_run} miles.")
         camel_tiredness += 1
         random_distance = random.randrange(7, 15)
-        distance = distance + random_distance
-        deathnatives = miles_traveled + distance
-        if deathnatives <= 0 and not done:
+        distance += random_distance
+        deathnatives = miles_traveled - distance
+        if miles_traveled - distance <= 0 and not done:
             print("The natives caught up to you and they extradite you to be executed on the rope.")
             done = True
-        if deathnatives > 0 and deathnatives <= 15 and not done:
+        if miles_traveled - distance <= 15 and not done:
             print("The natives are catching up to you!!")
         guesser = random.randrange(1, 21)   
         if guesser == lucky and not done:
