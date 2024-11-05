@@ -40,10 +40,10 @@ print(xval)
 
 second_values = "x:2,y:5 - x:5,y:11 - x:7,y:14"
 nextvalues = []
-for n in second_values.split("x:"):
-    m = int(n.split(",y:")[1])
-    z = int(m.split(" - "))
-    nextvalues.append(z)
+for pair in second_values.split(" - "):
+    for coord in pair.split(","):
+        value = int(coord.split(":")[1])
+        nextvalues.append(value)
 print(nextvalues)
 
     
